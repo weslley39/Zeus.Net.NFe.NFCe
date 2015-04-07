@@ -340,6 +340,8 @@ namespace NFe.Servicos
         {
             var versaoServico = Auxiliar.VersaoServicoParaString(ServicoNFe.RecepcaoEvento, _cFgServico.VersaoRecepcaoEvento);
 
+            var chaveNfe = "NFe" + eventos.First().infEvento.chNFe;
+
             #region Cria o objeto wdsl para consulta
 
             var ws = CriarServico(ServicoNFe.RecepcaoEvento, tipoRecepcaoEvento);
@@ -376,13 +378,13 @@ namespace NFe.Servicos
             var dadosEvento = new XmlDocument();
             dadosEvento.LoadXml(xmlEvento);
 
-            SalvarArquivoXml(idlote + "-ped-eve.xml", xmlEvento);
+            SalvarArquivoXml(chaveNfe + "-ped-eve.xml", xmlEvento);
 
             var retorno = ws.Execute(dadosEvento);
             var retornoXmlString = retorno.OuterXml;
             var retEnvEvento = new retEnvEvento().CarregarDeXmlString(retornoXmlString);
 
-            SalvarArquivoXml(idlote + "-eve.xml", retornoXmlString);
+            SalvarArquivoXml(chaveNfe + "-eve.xml", retornoXmlString);
 
             #region Obtém um procEventoNFe de cada evento e salva em arquivo
 
@@ -399,7 +401,7 @@ namespace NFe.Servicos
                 listprocEventoNFe.Add(procevento);
                 if (!_cFgServico.SalvarXmlServicos) continue;
                 var proceventoXmlString = procevento.ObterXmlString();
-                SalvarArquivoXml(procevento.evento.infEvento.Id.Substring(2) + "-procEventoNFe.xml", proceventoXmlString);
+                SalvarArquivoXml(chaveNfe + "-procEventoNFe.xml", proceventoXmlString);
             }
 
             #endregion
@@ -715,6 +717,8 @@ namespace NFe.Servicos
 
             var ws = CriarServico(ServicoNFe.NFeAutorizacao, TipoRecepcaoEvento.Nenhum);
 
+            var idChave = nFes.First().infNFe.Id;
+
             ws.nfeCabecMsg = new nfeCabecMsg
             {
                 cUF = _cFgServico.cUF,
@@ -736,13 +740,13 @@ namespace NFe.Servicos
             var dadosEnvio = new XmlDocument();
             dadosEnvio.LoadXml(xmlEnvio);
 
-            SalvarArquivoXml(idLote + "-env-lot.xml", xmlEnvio);
+            SalvarArquivoXml(idChave + "-env-lot.xml", xmlEnvio);
 
             var retorno = ws.Execute(dadosEnvio);
             var retornoXmlString = retorno.OuterXml;
             var retEnvio = new retEnviNFe().CarregarDeXmlString(retornoXmlString);
 
-            SalvarArquivoXml(idLote + "-rec.xml", retornoXmlString);
+            SalvarArquivoXml(idChave + "-rec.xml", retornoXmlString);
 
             return new RetornoNFeAutorizacao(pedEnvio.ObterXmlString(), retEnvio.ObterXmlString(), retornoXmlString, retEnvio);
 
@@ -788,13 +792,15 @@ namespace NFe.Servicos
             var dadosRecibo = new XmlDocument();
             dadosRecibo.LoadXml(xmlRecibo);
 
-            SalvarArquivoXml(recibo + "-ped-rec.xml", xmlRecibo);
+            
 
             var retorno = ws.Execute(dadosRecibo);
             var retornoXmlString = retorno.OuterXml;
             var retRecibo = new retConsReciNFe().CarregarDeXmlString(retornoXmlString);
+            var chaveNfe = "NFe" + retRecibo.protNFe.First().infProt.chNFe;
 
-            SalvarArquivoXml(recibo + "-pro-rec.xml", retornoXmlString);
+            SalvarArquivoXml(chaveNfe + "-ped-rec.xml", xmlRecibo);
+            SalvarArquivoXml(chaveNfe + "-pro-rec.xml", retornoXmlString);
 
             return new RetornoNFeRetAutorizacao(pedRecibo.ObterXmlString(), retRecibo.ObterXmlString(), retornoXmlString, retRecibo);
 

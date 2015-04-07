@@ -30,6 +30,10 @@
 /* http://www.zeusautomacao.com.br/                                             */
 /* Rua Comendador Francisco josé da Cunha, 111 - Itabaiana - SE - 49500-000     */
 /********************************************************************************/
+
+using System;
+using System.Xml.Serialization;
+
 namespace NFe.Classes.Informacoes.Total
 {
     public class ICMSTot
@@ -37,6 +41,7 @@ namespace NFe.Classes.Informacoes.Total
         /// <summary>
         ///     W03 - Base de Cálculo do ICMS
         /// </summary>
+        //[XmlElement(Type = typeof(decimal))]
         public decimal vBC { get; set; }
 
         /// <summary>

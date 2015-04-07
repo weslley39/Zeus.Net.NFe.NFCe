@@ -768,14 +768,14 @@ namespace NFe.AppTeste
         {
             var ide = new ide
             {
-                cUF = Estado.SE,
+                cUF = Estado.SP,
                 natOp = "VENDA",
                 indPag = IndicadorPagamento.ipVista,
                 mod = modelo,
                 serie = 1,
                 nNF = numero,
                 tpNF = TipoNFe.tnSaida,
-                cMunFG = 2802908,
+                cMunFG = 3550308,
                 tpEmis = _configuracoes.CfgServico.tpEmis,
                 tpImp = TipoImpressao.tiRetrato,
                 cNF = "1234",

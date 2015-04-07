@@ -48,6 +48,7 @@ namespace NFe.Utils
 
         private ConfiguracaoServico()
         {
+
         }
 
         /// <summary>

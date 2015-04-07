@@ -1,0 +1,14 @@
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Wsdl.dll
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Wsdl.pdb
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Classes.dll
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Classes.pdb
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\obj\Debug\NFe.Wsdl.csprojResolveAssemblyReference.cache
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\obj\Debug\NFe.Wsdl.dll
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\Zeus.Net.NFe.NFCe\NFe.Wsdl\obj\Debug\NFe.Wsdl.pdb
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Wsdl.dll
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Wsdl.pdb
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Classes.dll
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\bin\Debug\NFe.Classes.pdb
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\obj\Debug\NFe.Wsdl.csprojResolveAssemblyReference.cache
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\obj\Debug\NFe.Wsdl.dll
+C:\Users\Weslley Neri\Workspace\Weslley-Vagrant-Puppet\app\new-zeus\Zeus.Net.NFe.NFCe\NFe.Wsdl\obj\Debug\NFe.Wsdl.pdb

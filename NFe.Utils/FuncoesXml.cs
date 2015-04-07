@@ -189,5 +189,7 @@ namespace NFe.Utils
                 throw new Exception(String.Format("Nenhum objeto {0} encontrada no xml!", nomeDoNode));
             return xmlString.ToString();
         }
+
+
     }
 }

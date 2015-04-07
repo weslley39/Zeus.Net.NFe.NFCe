@@ -1092,7 +1092,7 @@ namespace NFe.Servicos
                     TipoAmbiente.taHomologacao, emissao, Estado.SP,
                     "https://homologacao.nfe.fazenda.sp.gov.br/ws/cadconsultacadastro2.asmx"));
                 if (emissao != TipoEmissao.teDPEC)
-                    Definicoes.Add(new DefinicaoWsdlCampos(ServicoNFe.RecepcaoEvento, VersaoServico.ve310,
+                    Definicoes.Add(new DefinicaoWsdlCampos(ServicoNFe.RecepcaoEvento, VersaoServico.ve100,
                         TipoAmbiente.taHomologacao, emissao, Estado.SP,
                         "https://homologacao.nfe.fazenda.sp.gov.br/ws/recepcaoevento.asmx"));
                 Definicoes.Add(new DefinicaoWsdlCampos(ServicoNFe.NFeAutorizacao, VersaoServico.ve310,
@@ -1144,7 +1144,7 @@ namespace NFe.Servicos
                     TipoAmbiente.taProducao, emissao, Estado.SP,
                     "https://nfe.fazenda.sp.gov.br/ws/cadconsultacadastro2.asmx"));
                 if (emissao != TipoEmissao.teDPEC)
-                    Definicoes.Add(new DefinicaoWsdlCampos(ServicoNFe.RecepcaoEvento, VersaoServico.ve310,
+                    Definicoes.Add(new DefinicaoWsdlCampos(ServicoNFe.RecepcaoEvento, VersaoServico.ve100,
                         TipoAmbiente.taProducao, emissao, Estado.SP,
                         "https://nfe.fazenda.sp.gov.br/ws/recepcaoevento.asmx"));
                 Definicoes.Add(new DefinicaoWsdlCampos(ServicoNFe.NFeAutorizacao, VersaoServico.ve310,
